@@ -100,7 +100,7 @@ public class HttpDownloadUtility {
 				TelemetryManager.log("Sluggified File Name: " + file.getAbsolutePath());*/
 
 			System.out.println("http utility called.........");
-			return download(fileURL, false);
+			return CommonCloudStore.download(fileURL, saveDir);
 
 /*			} else {
 				TelemetryManager.log("No file to download. Server replied HTTP code: " + responseCode);
